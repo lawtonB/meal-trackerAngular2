@@ -19,9 +19,11 @@ import {CaloryPipe} from './calory.pipe';
   <div *ngFor="#meal of mealList | calory: filterCalory"
   (click)="mealClicked(meal)"
   [class.selected]='meal === selectedMeal'>
-    <h3>{{ meal.name }}</h3>
-    <h3>details: {{ meal.details }}</h3>
-    <h3>calories: {{ meal.calories }}</h3>
+    <h4>{{ meal.name }}</h4>
+    <div *ngIf='meal === selectedMeal'>
+      <h3>details: {{ meal.details }}</h3>
+      <h3>calories: {{ meal.calories }}</h3>
+    </div>
     <edit-meal-details *ngIf='meal === selectedMeal' [meal]='selectedMeal'>
     </edit-meal-details>
   </div>
