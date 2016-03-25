@@ -1,6 +1,8 @@
 import { Component, EventEmitter } from 'angular2/core';
 import { Meal } from './meal.model';
 import { MealListComponent } from './meal-list.component';
+import { EditMealDetailsComponent } from './edit-meal-details.component';
+
 
 @Component({
   selector: 'my-app',
@@ -27,6 +29,6 @@ export class AppComponent {
   }
 
   mealWasSelected(clickedMeal: Meal): void {
-    console.log('parent', clickedMeal);
+    // console.log('parent', clickedMeal);
   }
 }
