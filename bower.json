@@ -1,0 +1,18 @@
+{
+  "name": "meal-tracker",
+  "description": "",
+  "main": "",
+  "authors": [
+    "lawton browning <lawton.a.browning@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
