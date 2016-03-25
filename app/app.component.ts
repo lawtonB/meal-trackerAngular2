@@ -24,7 +24,7 @@ export class AppComponent {
     this.meals = [
       new Meal("pizza", "with pepperoni",200),
       new Meal("salad", "greek",150),
-      new Meal("steak", "rare",300),
+      new Meal("steak", "rare",350),
     ];
   }
 
